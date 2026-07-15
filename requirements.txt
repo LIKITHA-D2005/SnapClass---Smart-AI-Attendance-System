@@ -17,3 +17,6 @@ segno
 pillow #deals with images
 
 streamlit #basic frontend library
+
+librosa #edit voice files
+resemblyzer #creates embeddings of voice files for ml operations
