@@ -61,7 +61,7 @@ def get_trained_model():
     except ValueError:
         pass
  
-    return {'clf': clf, 'X':x, "y":y}
+    return {'clf': clf, 'X':X, "y":y}
 def train_classifier():
     st.cache_resource.clear()
     model_data = get_trained_model()
@@ -98,4 +98,4 @@ def predict_attendance(class_image_np):
         if best_match_score <= resemblance_threshold:
             detected_student[predicted_id] = True
 
-    return detected_student, all_students, len(encoding)
+    return detected_student, all_students, len(encodings)
