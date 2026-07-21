@@ -6,7 +6,7 @@ def style_background_home():
         <style>
         
             .stApp{
-                background: #FFE2E2 !important;
+                background: #FFE2E2 !important; 
                 }
 
             .stApp div[data-testid = "stColumn"]{
@@ -18,7 +18,7 @@ def style_background_home():
         
         </style>
                 """
-                , unsafe_allow_html = True)
+                , unsafe_allow_html = True) #streamlit allows raw HTML and CSS
     
 def style_background_dashboard():
 
@@ -28,11 +28,11 @@ def style_background_dashboard():
             .stApp{
                 background: #FBEFEF !important;
                 }
-        /style>
+        </style>
                 """
                 , unsafe_allow_html = True)
     
-def style_base_layout():
+def style_base_layout(): #styling used everywhere
 
     st.markdown(""" 
         <style>
@@ -71,7 +71,7 @@ def style_base_layout():
                 
                 button{
                    border-radius: 1.5rem !important;
-                   background: #C5B3D3  !important;
+                   background-color: #C5B3D3  !important;
                    color: white !important;
                    padding: 10px 20px !important;
                    border: none !important;
@@ -80,7 +80,7 @@ def style_base_layout():
 
                 button[kind="secondary"]{
                    border-radius: 1.5rem !important;
-                   background: #F5CBCB  !important;
+                   background-color: #F5CBCB  !important;
                    color: white !important;
                    padding: 10px 20px !important;
                    border: none !important;
@@ -89,7 +89,7 @@ def style_base_layout():
 
                 button[kind="tertiary"]{
                    border-radius: 1.5rem !important;
-                   background: black  !important;
+                   background-color: black  !important;
                    color: white !important;
                    padding: 10px 20px !important;
                    border: none !important;
@@ -100,6 +100,6 @@ def style_base_layout():
                     transform : scale(1.05)
                 }
 
-        /style>
+        </style>
                 """
                 , unsafe_allow_html = True)

@@ -2,7 +2,9 @@ import streamlit as st
 from src.components.header import header_home
 from src.components.footer import footer_home
 from src.ui.base_layout import style_base_layout, style_background_home
-def home_screen():
+
+
+def home_screen(): #builds entire home page
 
 
     header_home()

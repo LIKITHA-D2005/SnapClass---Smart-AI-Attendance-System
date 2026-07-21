@@ -11,7 +11,7 @@ def header_home():
             <h1 style='text-align:center; color:#C5B3D3'>SNAP<br/>CLASS</h1>
         </div>   
                 
-                """, unsafe_allow_html=True)
+                """, unsafe_allow_html=True) #allows html rendering
 
 
 def header_dashboard():
